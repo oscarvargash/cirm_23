@@ -1,6 +1,6 @@
 # Day one, Morning
 
-> Add the yellow flag to the right corner of your laptop ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 ## Before start
 
@@ -25,7 +25,7 @@ You can also write 'terminal' in the search bar of the main manu located in the 
 
 > Note for Windows users: you can install linux in your computer installing a virtual in your computer [installing a virtual machine](https://github.com/merlyescalona/ucsc-eeb-intro2comptools/tree/master/week_00#using-a-virtual-machine) for set up.
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ## The Unix shell / terminal / command-line
 
@@ -47,7 +47,7 @@ In addition, the command line is often the easiest way to interact with remote m
 
 ## Navigation of your computer using terminal
 
-> Change your flag to yellow ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 Now that you have open terminal you will see a black screen waiting for commands. First we need to know where in the computer we are located by typing:
 
@@ -132,13 +132,13 @@ ls -lah
 
 **Can you tell us what does the options `-h` do?**
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ### Creating directories
 
 Now that you know to identify your working directory and list the items now we will learn how to created directories and move across directories.
 
-> Change your flag to Yellow ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 Let's move into the Documents folder:
 
@@ -201,11 +201,11 @@ cd
 
 You can see that the drag and drop method adds the absolute path of the folder instead of the relative path.
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ### Creating and managing files
 
-> Change your flag to yellow ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 A practical way to create a file is to use the text editor `nano`. Let's create a new file by typing:
 
@@ -244,11 +244,11 @@ cat log.txt
 
 ***TIP:*** When typing file and folder names you can press the `tab` key to autocomplete a name, notice that the letters typed have to be long enough to match only a single item. In this case just by typing `cat log` and then pressing <kbd>tab</kbd> we should be able to obtain the complete command desired.
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 It turns out that we want `log.txt` inside a folder called `personal_entries`. First we need to create the directory by:
 
-> Change your flag to yellow ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 ```
 mkdir personal
@@ -287,7 +287,7 @@ cat log_02.r
 
 Notice that regarding the extension of the file `.txt` / `.r` cat prints the contents of the file to the screen.
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 
 
@@ -302,7 +302,7 @@ You can also write 'terminal' in the search bar of the main manu located in the 
 
 ## Cancel a running process
 
-> Change your flag to yellow ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 Sometimes an unwanted process happens in our terminal, perhaps we `cat` a really long file or we just insert a typo in the command line. We can simulate an unwanted process by just typing:
 
@@ -371,11 +371,11 @@ rm *.r
 
 ***EXTREME CAUTION `rm *` will remove ALL the files inside the directory forever!***
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ## Using programs
 
-> Add the yellow flag to the right corner of your laptop ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 The terminal is a powerful to run programs, as you can analyze tons of data with only a single command. In this tutorial we will run several aplpications in the terminal and will learn the principles of automatizing data processing.
 
@@ -461,14 +461,14 @@ Add these numbers to a text file in your folder using `nano`
 
 Check with your instructor or teaching assistant before going further
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 
 ## Using FastQC
 
 We can use FastQC to evaluate the quality of the file. First let's figure out how does FastQC works. Most programs have a help menu.
 
-> Change your flag to yellow ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 ```
 fastqc -help
@@ -498,7 +498,7 @@ Do the sequence numbers match your calculations with grep?
 
 Relatively which files have with low quality based on "Per base sequence quality"?
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 Congrats, you have succesfully finish the introduction to bash tutorial !!!!!
 Here is a great resrouce for the future:

@@ -42,7 +42,7 @@ Anything worth doing, from losing weight to getting a degree, takes time. Learni
 ### on Cal Poly Humboldt labs:
 Although you can download in your personal computer (and you are encouraged to do so – find instructions on Canvas), we will work on a standardized set up on the school lab. 
 
-> Add the yellow flag to the right corner of your monitor ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 * We can open Rstudio by simply typing `Rstudio` in the search bar of the OS.
  
@@ -120,12 +120,12 @@ Run the following calculations:
 
 And: The year you were born – today’s date (just the day) * your favorite number
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ## R functions
 R is a functional programming language meaning that pretty much everything we do in R is in terms of functions. R includes hundreds of built-in functions for mathematical calculations (including matrix algebra, which is extremely useful in statistics), data analyses, graphing, etc. Values passed to functions are specified within parenthesis after the function name. Here are some simple examples to try:
 
-> Add the yellow flag to the right corner of your monitor ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 ```
 log(100)
@@ -181,14 +181,14 @@ Vector2[21]
 
 returns the 21st element of the vector.
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ### Lists
 While vectors only contain numbers, lists can contain mixed types of elements in R. You can find numbers, strings (characters), logical arguments and even lists nested within lists. 
 
 Create a list using the following code:
 
-> Add the yellow flag to the right corner of your monitor ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 ```
 list_data=list(color='red', vector=c(21,23,43), password=TRUE, Temperature=21.5)
@@ -229,7 +229,7 @@ Test them on the variables you have created so far: Vector1, Vector2, this.is.a.
 ## This is the end of the morning activity
 Good job! You have completed the first session of our Bioinformatics Workshop. We will be meeting again for the afternoon session. **Make sure you save your files to the cloud (they will be deleted from vlab once you log out!)**. You can also directly submit to Canvas if you have completed all the work. See you soon!
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 
 # Day 2, Afternoon, importing files to R, dataframes
@@ -242,7 +242,7 @@ First however, we need to tell R which directory we are using. This is equivalen
  
 Here, I will provide guidelines to save your progress in your google drive and access a working folder in the school computer via ‘vlab’. I will insist we all do this for now to have the same set up for the purpose of the class. However, if working on your own computer, you can save your progress in the same folder you direct R to (see In your computer section below).
 
-> Add the yellow flag to the right corner of your monitor ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 #### In your computer
 Create a folder, provide a clear name and save it in a place you know well. Save all files related to these R exercises within this folder. Use the above instructions to set the writing directory within Rstudio.
@@ -299,13 +299,13 @@ Now that you have interpreted and reflected on the error message, let’s contin
 bacteria = read.table(“TableR1.fixed.txt”, header=T)
 ```
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 This command finds the file and recognizes that there are labels (“headers”) for each variable. The “T” stands for TRUE and must be capitalized. The second command (“bacteria”) simply causes the file to be printed. The data file will now be available for use in R.
 
 You should no be able to take a look at your data frame in R, by just typing the name of the object
 
-> Add the yellow flag to the right corner of your monitor ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 ```
 bacteria
@@ -358,7 +358,7 @@ I guess you have to use your own column names…
 5. 	I guess one could name this scatter plot corrie.lation (this is a very sad joke and should not be taken too seriously). One can label axes and the graph itself in a variety of ways. Try using the “help(plot)” function to figure out how to correctly label the axes and create a title for the graph.
 6. 	Create a histogram of the whos.there variable using the function hist.
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 # Day 2, bonus using Dplyr, basic stats, and loops
 
@@ -366,7 +366,7 @@ The power of coding relies heavily on being able to analyze large datasets with 
 
 ## Filtering data and getting some basic statistics
 
-> Add the yellow flag to the right corner of your monitor ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 - First create a folder in your documents or desktop named `day_2`.
 
@@ -408,11 +408,11 @@ Now we can import our dataset
 data = read.csv("abronia_2.csv")
 ```
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 This dataframe is pretty large so there is no point in printing it all to the screen. To check that our dataset has been successfully imported, we can print to screen only the “head” of the dataset.
 
-> Add the yellow flag to the right corner of your monitor ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 ```
 head(data)
@@ -450,11 +450,11 @@ We can see that there is something wrong with the command or the dataset, any id
 tail(data$decimalLatitude, 100)
 ```
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 We can see that there are multiple rows without values “NAs”.  with dplyr we can easily filter out those. Let's create a new dataframe with only data that has latitude `geodata`.
 
-> Add the yellow flag to the right corner of your monitor ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 ```
 geodata = data %>% filter(!is.na(decimalLatitude))
@@ -500,12 +500,12 @@ max(abla$decimalLongitude)
   
 </details>
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ## Basic plotting and model testing
 We can easily compare the latitudinal range among species using a boxplot.
 
-> Add the yellow flag to the right corner of your monitor ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 ```
 boxplot(geodata$decimalLatitude ~ geodata$species, las = 2)
@@ -562,7 +562,7 @@ plot(abla$decimalLongitude, abla$decimalLatitude)
 abline(model1)
 ```
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ## Optional Exercise: advance plotting
 
