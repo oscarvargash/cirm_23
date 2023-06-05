@@ -5,10 +5,12 @@
 ## Before start
 
 To start this tutorial you need to be logged in the Linux virtual machine
-[vlinux.humboldt.edu](https://vlinux.humboldt.edu/)
+[vlinux.humboldt.edu](https://vlinux.humboldt.edu/) please use your Cal Poly Humboldt credentials
 
-For best visualization we recomend:
+For best visualization we recomend of the virtual machine:
 - Change the remote desktop to fit into the window
+
+The virtual machine is a virtual Linux computer runing in a server through the PC you are using. Linux based systems are typically used in bioinformatic environments, hence the importance of getting familiarized with them.
 
 
 ### Open terminal
