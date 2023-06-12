@@ -1,4 +1,4 @@
-# Day one, Morning
+# Day one, Morning, Navigating the system
 
 > Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
@@ -291,7 +291,7 @@ Notice that regarding the extension of the file `.txt` / `.r` cat prints the con
 
 
 
-# Day one, afternoon
+# Day one, afternoon, managing files and using programs
 
 To start this tutorial you need to be logged in the Linux virtual machine
 [vlinux.humboldt.edu](https://vlinux.humboldt.edu/)
@@ -323,7 +323,7 @@ In cases where directories contain thousands of files, it might not be practical
 Let's make sure wer have a good number of files to perform the next exercise, make sure you are inside `day_01`. We are going to create 4 emtu files using the command `touch`
 
 ```
-cd ~/Documentts/day_01
+cd ~/Documents/day_01
 touch log_1.txt log_2.txt script_1.r script_2.r
 ```
 
@@ -383,7 +383,7 @@ Please download in your machine a compressed file with the data in the folder na
 
 ```
 cd ~Documents/day_01
-wget https://github.com/oscarvargash/cirm_22/raw/main/day_1/files/files.zip
+wget https://github.com/oscarvargash/cirm_23/raw/main/day_1/files/files.zip
 ```
 
 As you can see, this is a compressed file. We can decompressed by
