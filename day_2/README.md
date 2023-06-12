@@ -264,7 +264,7 @@ We are going to focus on 4 simple ways to get files or data into R. But, before 
  
 ![Table1](files/Table1_CIRMBioinf.jpeg)
 
-Now, we want to get this data into R. But, I will not work (and I will prove this to you later).
+Now, we want to get this data into R. But, it will not work (and I will prove this to you later).
  
 We intentionally started with a file that R cannot read. It has a couple of common problems that need to be fixed before any file can be brought into R.
 * Variable names (the column names) must follow the R rules.
