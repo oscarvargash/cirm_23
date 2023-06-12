@@ -434,9 +434,9 @@ This is file produced by a next-generation squencing run using an Illumina machi
 
 </details>
 
-We are interested in knowing how many sequeces are found in each file; how can we find out this?
+## Solviing a problem. We are interested in knowing how many sequeces are found in each file; how can we find out this?
 
-There is also program called `grep` that is able to search for specific words of characters. Furthermore, we know that every sequence in our file starts with `@`.
+There is a program called `grep` that is able to search for specific words or characters. Furthermore, we know that every sequence in our file starts with `@`.
 
 ```
 grep "@" L008_R1.fastq
@@ -459,6 +459,11 @@ grep -c "@" L008_R1.fastq
 How many sequences are found in the other three sequence files?
 Add these numbers to a text file in your folder using `nano`
 
+Teh file name should be sequence_count.txt
+
+PLease follow the following format:
+```L008_R1.fastq 32869```
+
 Check with your instructor or teaching assistant before going further
 
 > Remove your flag if you are good to continue ![](img/green.jpeg)
@@ -474,7 +479,7 @@ We can use FastQC to evaluate the quality of the file. First let's figure out ho
 fastqc -help
 ``` 
 
-It seems that we can simply add the name of the file as as the first argument, and we then add `-o` (output) to specify where the program should write the report
+It seems that we can simply add the name of the file as as the first argument, and we then add `-o` (output) to specify where the program should write the report. Recall that `.` indicates current directory.
 
 ```
 fastqc L008_R1.fastq -o .
@@ -501,7 +506,7 @@ Relatively which files have with low quality based on "Per base sequence quality
 > Remove your flag if you are good to continue ![](img/green.jpeg)
 
 Congrats, you have succesfully finish the introduction to bash tutorial !!!!!
-Here is a great resrouce for the future:
+Here is a great resource for the future:
 
 ### Cheat sheet of linux commands
 
