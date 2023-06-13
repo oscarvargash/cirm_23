@@ -161,13 +161,13 @@ To see what is stored in the variable simply type the variable name and press En
 Vector2 = log(Vector1)
 ```
 
-returns the natural log values of the elements stored in Vector1 and then stores them in the variable Vector2 (note: you will probably use this at some point to log-transform a variable). The rules for naming variables in S are simple: variable names are composed of letters (a-z, A-Z), numerals (0-9) and periods (.) and can be of any length (the first character cannot be a number, and spaces are not allowed). Consequently, variables can be given descriptive names so that you don’t forget what the variable is. For example: “this.is.a.variable.containing.log.values.for.vector1” is a valid variable name. Stupid, maybe, but valid.
+returns the natural log values of the elements stored in Vector1 and then stores them in the variable Vector2 (note: you will probably use this at some point to log-transform a variable). The rules for naming variables in R are simple: variable names are composed of letters (a-z, A-Z), numerals (0-9) and periods (.) and can be of any length (the first character cannot be a number, and spaces are not allowed). Consequently, variables can be given descriptive names so that you don’t forget what the variable is. For example: “this.is.a.variable.containing.log.values.for.vector1” is a valid variable name. Stupid, maybe, but valid.
 
 ```
 this.is.a.variable.containing.log.values.for.vector1 = log(Vector1)
 ```
 
-However, remember that you will have to type it out again to recall the variable. Unlike in many programming languages, variables in S are dynamically defined and redefined so we do not need to tell the interpreter how many values, what type (real, integer etc) or whether it is numeric or a character. We can also redefine a variable simply by assigning it to a different function e.g.
+However, remember that you will have to type it out again to recall the variable. Unlike in many programming languages, variables in R are dynamically defined and redefined so we do not need to tell the interpreter how many values, what type (real, integer etc) or whether it is numeric or a character. We can also redefine a variable simply by assigning it to a different function e.g.
 
 ```
 Vector2 = rnorm(100)
@@ -204,6 +204,43 @@ class(list_data[[3]])
 Uh! Logical class. This class of elements in R indicate true or false statements. We had not run into these before. If you try the other elements in the list you will find numeric, character strings and lists. The next layer of complexity is data frames and matrices, but, importantly, by now you have probably realized that R is much more than just a calculator. It can manipulate data, conduct much of the same statistics covered in SAS, JMP, Canoco, etc., and has excellent graphic capabilities. It can also serve as a programming language. We will cover examples of these in subsequent days of this workshop.
 
 Let's practice some of these skills before we move on.
+
+### Basic plotting
+
+You can easily make plots in R. A simple plot for a single variable can be done by:
+
+```
+plot(Vector2)
+```
+What is the meaning of the plot?
+
+A histogram can easily be created by typing:
+```
+hist(Vector2)
+```
+
+### Packages
+
+So far we have only used functions that are "native" to R, in other words functions written in the program itself. The popularity of R, however, rests on the many packages written by scientists like you. Seurat for example is a specific package to analyse data from single cell transcriptomics. Let's install our first package:
+
+```
+install.packages("ggplot2")
+``` 
+Once the package is installed you won't need to install the package until R or RStudio are updated. There is no need to install packages every time you open R.
+
+Now we need to load the package so we can use in our current R session:
+
+```
+library(ggplot2)
+```
+
+Now we can use ggplot to create a histogram:
+
+```
+ggplot() + aes(Vector2) + geom_histogram()
+```
+
+Notice how the syntax for ggplot is a bit different. This is because is written in different "style" 
  
 ### Task 4
 Practice your skills with variables and vectors! For each of the following items, show your code and your output.
@@ -222,7 +259,6 @@ is.numeric()
 as.numeric()
 is.logical()
 as.logical()
-factor()
 class()
 Test them on the variables you have created so far: Vector1, Vector2, this.is.a.variable.containing.log.values.for.vector1, list_data. What types of elements have you worked with so far? 
 
@@ -360,7 +396,7 @@ I guess you have to use your own column names…
 
 > Remove your flag if you are good to continue ![](img/green.jpeg)
 
-# Day 2, bonus using Dplyr, basic stats, and loops
+# Day 2 bonus, using Dplyr, basic stats, and loops
 
 The power of coding relies heavily on being able to analyze large datasets with few lines of code. A good package to work with table-like datasets is dplyr. We will import a dataset of plant occurrences and then calculate several statistics on those.
 
@@ -378,7 +414,7 @@ The power of coding relies heavily on being able to analyze large datasets with 
 
 - Save the new script as `abronia.r` inside the folder `day_2`
 
-### Installing our first R package
+### Installing dplyr
 
 R functions like a dock in which you can install packages for analyses. A very useful package for working with dataframes is dplyr.
 
@@ -394,7 +430,7 @@ library(dplyr)
 Now we need to tell R about your working folder. Look for the address of one of your files inside your `day_2` folder,
 
 ```
-setwd("C:/Users/ov20/Documents/cirm_2021/day_2")
+setwd("C:/Users/ov20/Documents/day_2")
 ```
 
 We can always check our working directory by typing:
