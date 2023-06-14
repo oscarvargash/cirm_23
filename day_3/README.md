@@ -25,7 +25,7 @@ library(patchwork)
 
 5. This is a double compressed file. Decompress the file by right clicking and then selecting the options `7-zip` `Extract here`. Repeat this with the `*.tar` file
 
-6. Set the folder where the data is as your working directory and import the data
+6. Set the folder (in RStudio > Session > set working directory) where the data is as your working directory and import the data
 
 ```
 setwd("YOUR_USER/Documents/day_3/pbmc3k/filtered_gene_bc_matrices/hg19/")
