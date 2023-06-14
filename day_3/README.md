@@ -25,10 +25,12 @@ library(patchwork)
 
 5. This is a double compressed file. Decompress the file by right clicking and then selecting the options `7-zip` `Extract here`. Repeat this with the `*.tar` file
 
-6. Set the folder where the data is as your working directory
+6. Set the folder where the data is as your working directory and import the data
 
 ```
 setwd("YOUR_USER/Documents/day_3/pbmc3k/filtered_gene_bc_matrices/hg19/")
+
+pbmc.data <- Read10X(data.dir = ".")
 ```
 
 7. Follow the tutorial found here https://satijalab.org/seurat/articles/pbmc3k_tutorial.html Make sure that the path to the data is correct and is written using forward slashes 
